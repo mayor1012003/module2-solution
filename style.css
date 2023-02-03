@@ -1,0 +1,149 @@
+/********** Base styles **********/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.75em;
+    font-family: "Comic Sans MS", serif;
+}
+
+.first_container {
+    border-style: solid solid none solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: cornflowerblue;
+    height: 35px;
+    position: relative;
+}
+
+.second_container {
+    border-style: none solid solid solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: cornflowerblue;
+    height: auto;
+}
+
+.headline_title {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: 1px solid black;
+    background: indigo;
+    padding: 0;
+}
+
+.color_b {
+    background-color: goldenrod;
+}
+
+.color_c {
+    background-color: darkcyan;
+}
+
+.color_d {
+    color: lawngreen;
+}
+
+.color_e {
+    background-color: lightcoral;
+}
+
+.color_f {
+    background-color: tomato;
+}
+
+p {
+    margin: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    font-family: "Comic Sans MS", serif;
+}
+
+.color_a {
+    color: crimson;
+}
+
+.info {
+    padding: 10px;
+    color: white;
+    font-family: "Comic Sans MS", serif;
+}
+
+.color_g {
+    color: black;
+}
+
+.color_h {
+    color: darkslateblue;
+}
+
+/* My somewhat understanding of a simple responsive html framework  */
+.row {
+    width: 100%;
+}
+
+/** For Desktops **/
+@media (min-width: 992px) {
+    .col-a, .col-b, .col-c  {
+        float: left;
+        padding: 20px;
+    }
+
+    .col-a {
+        width: 33.33%;
+    }
+    .col-b {
+        width: 50%;
+    }
+    .col-c {
+        width: 100%;
+    }
+}
+
+/** For Tablets **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-aa, .col-bb, .col-cc {
+        float: left;
+        padding: 20px;
+    }
+
+    .col-aa {
+        width: 33.33%;
+    }
+    .col-bb {
+        width: 50%;
+    }
+    .col-cc {
+        width: 100%;
+    }
+}
+
+/** For Smartphones **/
+@media (max-width: 767px) {
+    .col-aaa, .col-bbb, .col-ccc {
+        float: left;
+        padding: 20px;
+    }
+
+    .col-aaa {
+        width: 33.33%;
+    }
+    .col-bbb {
+        width: 50%;
+    }
+    .col-ccc {
+        width: 100%;
+    }
+}
